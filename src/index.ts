@@ -1,1 +1,3 @@
-console.log("success");
+import colors from "./colors/index";
+
+export { colors };
