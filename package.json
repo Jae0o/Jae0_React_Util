@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "These are various utils used in typescript and javascript.",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "build": "npm run cache && npm run esbuild && npm run tsc",
