@@ -1,0 +1,47 @@
+{
+  "name": "@jae0/util",
+  "version": "0.0.1",
+  "description": "These are various utils used in typescript and javascript.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run cache && npm run esbuild && npm run tsc",
+    "tsc": "npx tsc --emitDeclarationOnly",
+    "esbuild": "node esbuild.config.js",
+    "cache": "rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "keywords": [
+    "utils",
+    "react",
+    "typescript",
+    "type"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "esbuild": "^0.21.3",
+    "typescript": "^5.4.5"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "jae0",
+    "email": "leey153@naver.com",
+    "url": "https://github.com/Jae0o"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  },
+  "repository": {
+    "url": "https://github.com/Jae0o/Jae0_Util_NPM"
+  },
+  "bugs": {
+    "email": "leey153@naver.com"
+  }
+}
