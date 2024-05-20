@@ -1,6 +1,6 @@
 {
-  "name": "@jae0/util",
-  "version": "0.0.3",
+  "name": "@jaebrary/util",
+  "version": "0.0.1",
   "description": "These are various utils used in typescript and javascript.",
   "main": "dist/index.js",
   "files": [
