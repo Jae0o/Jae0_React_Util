@@ -1,7 +1,5 @@
-import colors from "./colors/index";
-import utils from "./utils/index";
+import hexToRgba from "./colors/hexToRgba/hexToRgba";
 
 export default {
-  ...colors,
-  ...utils,
+  hexToRgba,
 };
