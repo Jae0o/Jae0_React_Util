@@ -1,6 +1,6 @@
 {
-  "name": "@jaebrary/util",
-  "version": "0.0.1",
+  "name": "@jae0brary/utils",
+  "version": "0.0.2",
   "description": "These are various utils used in typescript and javascript.",
   "main": "dist/index.js",
   "files": [
@@ -35,19 +35,20 @@
     "typescript": "^5.4.5"
   },
   "license": "ISC",
-  "author": {
-    "name": "jae0",
-    "email": "leey153@naver.com",
-    "url": "https://github.com/Jae0o"
-  },
+  "author": "jae0 <leey153@naver.com> (https://github.com/Jae0o)",
   "engines": {
     "node": ">=20.10.0",
     "npm": ">=10.2.3"
   },
   "repository": {
-    "url": "https://github.com/Jae0o/Jae0_Util_NPM"
+    "url": "git+https://github.com/Jae0o/Jae0_Util_NPM.git"
   },
   "bugs": {
     "email": "leey153@naver.com"
+  },
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/Jae0o/Jae0_Util_NPM#readme",
+  "dependencies": {
+    "undici-types": "^5.26.5"
   }
 }
