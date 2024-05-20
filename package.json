@@ -1,6 +1,6 @@
 {
   "name": "@jae0/util",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "These are various utils used in typescript and javascript.",
   "main": "dist/index.js",
   "files": [
@@ -24,7 +24,10 @@
     "utils",
     "react",
     "typescript",
-    "type"
+    "type",
+    "javascript",
+    "haversine",
+    "haversineFormula"
   ],
   "devDependencies": {
     "@types/node": "^20.12.12",
