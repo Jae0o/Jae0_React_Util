@@ -1,5 +1,4 @@
 import hexToRgba from "./colors/hexToRgba/hexToRgba";
+import haversineFormula from "./utils/haversineFormula/haversineFormula";
 
-export default {
-  hexToRgba,
-};
+export { hexToRgba, haversineFormula };

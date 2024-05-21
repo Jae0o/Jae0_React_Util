@@ -20,7 +20,8 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  default: () => src_default
+  haversineFormula: () => haversineFormula_default,
+  hexToRgba: () => hexToRgba_default
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -40,8 +41,15 @@ var hexToRgba = (hex, options = {}) => {
 };
 var hexToRgba_default = hexToRgba;
 
-// src/index.ts
-var src_default = {
-  hexToRgba: hexToRgba_default
+// src/utils/haversineFormula/haversineFormula.ts
+var EARTH_RADIUS = 6371;
+var haversineFormula = (firstPoint, secondPoint) => {
+  const degLat = (firstPoint.lat - secondPoint.lat) * (Math.PI / 180);
+  const degLng = (firstPoint.lng - secondPoint.lng) * (Math.PI / 180);
+  const distanceCalc = Math.sin(degLat / 2) * Math.sin(degLat / 2) + Math.cos(firstPoint.lat * (Math.PI / 180)) * Math.cos(secondPoint.lat * (Math.PI / 180)) * Math.sin(degLng / 2) * Math.sin(degLng / 2);
+  const centralAngle = 2 * Math.atan2(Math.sqrt(distanceCalc), Math.sqrt(1 - distanceCalc));
+  const distance = EARTH_RADIUS * centralAngle * 1e3;
+  return distance;
 };
+var haversineFormula_default = haversineFormula;
 //# sourceMappingURL=index.cjs.map
